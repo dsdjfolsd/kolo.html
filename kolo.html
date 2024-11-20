@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperNova</title>
+    <style>
+        /* CSS para el diseño */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #4b0082, #1e90ff);
+            color: white;
+            text-align: center;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #ffcc00;
+        }
+        main {
+            padding: 20px;
+        }
+        button {
+            background-color: #ffcc00;
+            border: none;
+            color: black;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ffc107;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SuperNova</h1>
+    </header>
+    <main>
+        <p>Bienvenido a SuperNova, tu lugar para expresar tu identidad con estilo.</p>
+        <button onclick="mostrarMensaje()">Haz clic aquí</button>
+        <p id="mensaje"></p>
+    </main>
+    <footer>
+        &copy; 2024 SuperNova. Todos los derechos reservados.
+    </footer>
+    <script>
+        // JavaScript para la funcionalidad
+        function mostrarMensaje() {
+            const mensaje = document.getElementById("mensaje");
+            mensaje.textContent = "¡Gracias por visitarnos!";
+        }
+    </script>
+</body>
+</html>
